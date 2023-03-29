@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="#fefefe"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <ImageButton
+        android:id="@+id/selectBtn"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="163dp"
+        android:background="@drawable/picture"
+        android:contentDescription="@string/app_name"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/captureBtn"
+        android:layout_width="75dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/selectBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="166dp"
+        android:background="@drawable/camera"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/predictBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/captureBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="153dp"
+        android:backgroundTint="#39ff14"
+        android:text="PREDICT"
+        android:textColor="#FBFFFF" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/predictBtn"
+        android:layout_marginTop="20dp"
+        android:text="---------"
+        android:textStyle="bold"
+        android:textColor="#FBFFFF"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+</RelativeLayout>
